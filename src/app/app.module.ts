@@ -10,13 +10,22 @@ import { HomePage } from '../pages/home/home';
 import { MediaPage } from '../pages/media/media';
 import { CoffeePotsPage } from '../pages/coffee-pots/coffee-pots';
 
+import { DetailshomePage } from '../pages/detailshome/detailshome'; 
+import { DetailsmediaPage } from '../pages/detailsmedia/detailsmedia';
+import { DetailscoffeepotsPage } from '../pages/detailscoffeepots/detailscoffeepots';
+
 @NgModule({
   declarations: [
     MyApp,
     DerkaffeePage,
     HomePage,
     MediaPage,
-    CoffeePotsPage
+    CoffeePotsPage,
+
+    DetailshomePage,
+    DetailsmediaPage,
+    DetailscoffeepotsPage
+
   ],
   imports: [
     BrowserModule,
@@ -28,7 +37,12 @@ import { CoffeePotsPage } from '../pages/coffee-pots/coffee-pots';
     DerkaffeePage,
     HomePage,
     MediaPage,
-    CoffeePotsPage
+    CoffeePotsPage,
+
+    DetailshomePage,
+    DetailsmediaPage,
+    DetailscoffeepotsPage
+    
   ],
   providers: [
     StatusBar,

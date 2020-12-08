@@ -1,15 +1,19 @@
-<!--
-  Generated template for the CoffeePotsPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
   <ion-navbar>
-    <ion-title>Coffee Pots</ion-title>
+    <ion-title>COFFEE POTS</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+
+	<ion-card
+		*ngFor="let currentCard of _dataCards"
+		(click)="loadDetails (currentCard)">
+		<img src="assets/imgs/{{ currentCard.image }}">
+
+		<ion-card-content>
+			<ion-card-title>{{ currentCard.title | uppercase}}</ion-card-title>
+		</ion-card-content>
+	</ion-card>
 
 </ion-content>
